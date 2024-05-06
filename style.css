@@ -1,0 +1,908 @@
+/* Navigation */
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --pink: #ff00a2;
+  --blue: #00bbff;
+  --darkpink: #9a026f;
+  --darkblue: #005675;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
+
+.row {
+  --bs-gutter-x: 0rem;
+}
+body {
+  background-color: var(--black);
+  font-family: "Jockey One";
+  color: var(--white);
+}
+ul {
+  list-style: none;
+}
+
+/*//////////////////////////////////////////////////////////////////   NAVBAR*/
+.logo-img {
+  height: 60px;
+  width: 130px;
+  margin-left: 100px;
+}
+
+#navBar {
+  display: flex;
+  width: 100%;
+  background-color: var(--black);
+  height: 80px;
+  padding-top: 10px;
+}
+
+#navBar h1 {
+  width: 25%;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  color: var(--clr3);
+  background-color: var(--black);
+  border-radius: 10px;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Jockey One";
+}
+
+#navLinks {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 75%;
+  padding-left: 200px;
+  font-family: "Jockey One", sans-serif;
+  font-size: 40px;
+  padding-bottom: 7px;
+}
+
+.navList {
+  text-decoration: none;
+  color: var(--white);
+  padding: 3px;
+}
+
+.navList:hover {
+  color: var(--blue);
+}
+/*//////////////////////////////////////////////////////////////////   HOME HER0*/
+
+div#carousel {
+  perspective: 950px;
+  background-image: url(../drumbass/pics/cloud3.jpg);
+  padding-top: 10%;
+  padding-left: 5%;
+  font-size: 0;
+  overflow: hidden;
+  height: 600px;
+}
+
+figure#spinner {
+  transform-style: preserve-3d;
+  height: 300px;
+  transform-origin: 50% 50% -500px;
+  transition: 1s;
+}
+figure#spinner img {
+  width: 40%;
+  max-width: 425px;
+  position: absolute;
+  left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline: 1px solid transparent;
+}
+figure#spinner img:nth-child(1) {
+  transform: rotateY(0deg);
+}
+figure#spinner img:nth-child(2) {
+  transform: rotateY(-45deg);
+}
+figure#spinner img:nth-child(3) {
+  transform: rotateY(-90deg);
+}
+figure#spinner img:nth-child(4) {
+  transform: rotateY(-135deg);
+}
+figure#spinner img:nth-child(5) {
+  transform: rotateY(-180deg);
+}
+figure#spinner img:nth-child(6) {
+  transform: rotateY(-225deg);
+}
+figure#spinner img:nth-child(7) {
+  transform: rotateY(-270deg);
+}
+figure#spinner img:nth-child(8) {
+  transform: rotateY(-315deg);
+}
+div#carousel ~ span {
+  color: var(--blue);
+  margin: 5%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 6rem;
+  transition: 0.6s color;
+  position: relative;
+  margin-top: -20rem;
+  border-bottom: none;
+  line-height: 0;
+}
+div#carousel ~ span:hover {
+  color: var(--darkpink);
+  cursor: pointer;
+}
+
+/*//////////////////////////////////////////////////////////////////   BANNER HER0*/
+
+.banner {
+  background: linear-gradient(0.25turn, var(--darkblue), var(--darkpink));
+  height: 70px;
+  margin: auto;
+}
+
+.banner-text {
+  font-family: "Jockey One", sans-serif;
+  font-size: 20px;
+  color: var(--white);
+  text-align: center;
+  margin: auto;
+}
+
+.delivery-img {
+  height: 30px;
+  width: 50px;
+}
+
+/*//////////////////////////////////////////////////////////////////   HOME MAIN*/
+
+.home-main-container {
+  padding-left: 17%;
+  padding-right: 17%;
+}
+.home-main {
+  background-color: var(--black);
+  height: 300px;
+}
+
+.links {
+  text-decoration: none !important;
+  color: var(--white);
+}
+
+.home-main-text {
+  margin-top: 11px;
+}
+
+.home-main-arrow {
+  height: 100px;
+  padding-bottom: 10px;
+}
+
+.home-main-h5 {
+  font-size: 40px;
+  color: var(--white);
+  transition: color 0.7s;
+}
+
+.home-main-p {
+  font-size: 25px;
+  color: var(--white);
+  transition: color 1s;
+}
+
+.home-gallery-arrow {
+  height: 50px;
+}
+
+.home-gallery-row {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.home-gallery-images {
+  height: 180px;
+}
+
+/*//////////////////////////////////////////////////////////////////   HOME MODELS*/
+
+.home-models-area {
+  height: 20%;
+}
+.home-models {
+  width: 100%;
+  margin-left: -20px;
+}
+
+/*//////////////////////////////////////////////////////////////////   ADIDAS HOME*/
+.adidas-section {
+}
+
+.adidas {
+  height: 800px;
+}
+.adidas-logo {
+  height: 150px;
+}
+
+.adidas-hats {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.adidas-row {
+  text-decoration: none;
+}
+
+.adidas-hat {
+  height: 150px;
+}
+
+.adidas-h5 {
+  font-size: 40px;
+  color: var(--white);
+}
+
+.adidas-p {
+  font-size: 25px;
+  color: var(--white);
+}
+
+.adidas-ul {
+  font-size: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+/*//////////////////////////////////////////////////////////////////   COLLECTION*/
+
+.collection {
+}
+
+.collection-text-col {
+  background-image: url(../drumbass/pics/cloud7.jpg);
+  height: 600px;
+}
+
+.collection-text {
+  padding-top: 20%;
+  margin-left: 30%;
+}
+
+.collection-ul {
+  padding: 0;
+}
+
+.collection-pic {
+  margin: 10%;
+}
+
+.collection-pics {
+}
+
+.collection-pic.usb {
+  height: 60px;
+  padding-left: 60px;
+}
+
+.collection-pic.finger {
+  height: 150px;
+}
+
+.collection-pic.mic {
+  height: 250px;
+  padding-left: 10%;
+}
+
+.collection-pic.decks {
+  height: 130px;
+  padding-right: 20px;
+}
+
+.collection-h5 {
+  font-size: 40px;
+}
+
+.collection-p {
+  font-size: 25px;
+}
+
+.collection-li {
+  font-size: 20px;
+}
+
+.collection-pics {
+  background-color: var(--black);
+}
+
+/*//////////////////////////////////////////////////////////////////   FOOTER*/
+
+.footer-area {
+  background-image: url(../drumbass/pics/footerclouds.png);
+  height: 475px;
+}
+
+.links-row {
+  border-bottom: 2px solid var(--blue);
+  height: 400px;
+}
+
+.links-text {
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+.links-h6 {
+}
+
+.links-h6 {
+  font-size: 40px;
+}
+
+.links-ul {
+  padding: 0px;
+}
+
+.links-li {
+  float: left;
+  padding-right: 20px;
+  font-size: 20px;
+  color: var(--white);
+}
+
+.follow-col {
+}
+
+.follow-div {
+}
+
+.follow-logo {
+  width: 85%;
+  padding-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: 10%;
+}
+
+.follow-p {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.follow-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.follow-li {
+  float: left;
+}
+
+.follow-img-1 {
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+}
+.follow-img-2 {
+  height: 46px;
+  width: 46px;
+}
+.follow-img-3 {
+  height: 51px;
+  width: 51px;
+}
+
+.bottom-row {
+}
+.bottom-left {
+  float: left;
+}
+.bottom-right {
+  margin-top: -25px;
+}
+
+.bottom-p {
+  padding-left: 10%;
+  font-size: 20px;
+  margin: 25px;
+}
+
+.bottom-ul {
+  list-style: none;
+  padding: 0px;
+  margin: 25px;
+}
+
+.bottom-li {
+  padding-left: 20px;
+  font-size: 20px;
+  float: right;
+  color: var(--white);
+}
+
+/*//////////////////////////////////////////////////////////////////   ON HOVER*/
+
+.navList:hover,
+.home-main-row:hover,
+.adidas-row:hover,
+.links-li:hover,
+.bottom-li:hover {
+  background: -webkit-linear-gradient(var(--blue), var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-gallery-images {
+  transition: 0.5s;
+}
+
+.home-gallery-images:hover {
+  transform: scale(1.1);
+}
+
+/*//////////////////////////////////////////////////////////////////   MEDIA QUERIES*/
+
+@media only screen and (max-width: 1050px) {
+  div#carousel {
+    perspective: 500px;
+  }
+  .collection-pic.mic {
+    height: 150px;
+  }
+  .collection-pic.decks {
+    height: 90px;
+  }
+
+  .collection-pic.finger {
+    height: 120px;
+  }
+
+  .home-models {
+    margin-left: -17px;
+  }
+}
+
+@media only screen and (max-width: 928px) {
+  div#carousel {
+    perspective: 350px;
+    height: 500px;
+  }
+
+  .banner {
+    height: 50px;
+  }
+
+  .banner-text {
+    font-size: 18px;
+  }
+
+  .home-main {
+    height: 250px;
+  }
+  .home-gallery-images {
+    height: 150px;
+  }
+
+  .home-main-h5,
+  .adidas-h5,
+  .collection-h5,
+  .links-h6,
+  #navLinks {
+    font-size: 35px;
+  }
+
+  .home-main-p,
+  .adidas-p,
+  .collection-p,
+  .follow-p,
+  .bottom-li,
+  .bottom-p {
+    font-size: 18px;
+  }
+
+  .delivery-img {
+    height: 20px;
+    width: 30px;
+  }
+
+  .home-main-container {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .home-models {
+    margin-left: -14px;
+  }
+
+  .adidas {
+    height: 550px;
+  }
+
+  .adidas-ul,
+  .collection-li,
+  .links-li {
+    font-size: 15px;
+  }
+
+  .adidas-hat {
+    height: 100px;
+  }
+
+  .adidas-logo {
+    height: 100px;
+  }
+
+  .adidas-logo-img {
+    width: 50%;
+  }
+
+  .collection-text-col {
+    height: 450px;
+  }
+
+  .collection-text {
+    padding-top: 100px;
+  }
+
+  .collection-pic.mic {
+    height: 120px;
+  }
+  .collection-pic.decks {
+    height: 70px;
+  }
+
+  .collection-pic.finger {
+    height: 100px;
+  }
+
+  .follow-img-1 {
+    height: 30px;
+    width: 30px;
+  }
+
+  .follow-img-2 {
+    height: 35px;
+    width: 35px;
+  }
+
+  .follow-img-3 {
+    height: 41px;
+    width: 41px;
+  }
+
+  .footer-area {
+    height: 350px;
+  }
+
+  .links-row {
+    height: 275px;
+  }
+
+  div#carousel ~ span {
+    margin-top: -241px;
+  }
+  .home-main-title.col-3 {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .adidas {
+    height: 500px;
+  }
+
+  .collection-pic.usb {
+    height: 40px;
+    padding-left: 40px;
+  }
+
+  .home-gallery-images {
+    height: 110px;
+  }
+
+  .collection-pic.usb {
+    height: 40px;
+    padding-left: 40px;
+  }
+
+  figure#spinner img {
+    width: 29%;
+  }
+
+  div#carousel {
+    perspective: 220px;
+    height: 350px;
+  }
+
+  div#carousel ~ span {
+    margin-top: -170px;
+  }
+
+  .adidas {
+  }
+
+  .home-main-title.col-3 {
+    margin-top: 20px;
+  }
+
+  .home-main-text {
+    margin-top: 5px;
+  }
+
+  .banner {
+    height: 35px;
+  }
+
+  .home-main-text {
+    margin-top: 11px;
+  }
+  .logo-img {
+    margin-left: 50px;
+  }
+
+  .links-row {
+    height: 225px;
+  }
+
+  .footer-area {
+    height: 300px;
+  }
+
+  .collection-text-col {
+  }
+
+  .adidas-hats {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .home-gallery-row {
+    margin-left: 15px;
+  }
+
+  .collection-text {
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .collection-pic {
+    margin: 3%;
+  }
+
+  .collection-pic.usb {
+    padding-left: 25px;
+  }
+
+  .bottom-p {
+    margin: 10px;
+  }
+
+  .footer-area {
+    height: 265px;
+  }
+
+  .home-gallery-images {
+    height: 100px;
+  }
+
+  .home-gallery-row {
+    margin-left: 30px;
+  }
+
+  div#carousel {
+    perspective: 140px;
+    height: 300px;
+  }
+
+  div#carousel ~ span {
+    margin-top: -150px;
+  }
+
+  .home-main-h5,
+  .adidas-h5,
+  .collection-h5,
+  .links-h6,
+  #navLinks {
+    font-size: 30px;
+  }
+  .home-main-p,
+  .adidas-p,
+  .collection-p,
+  .follow-p,
+  .bottom-li,
+  .bottom-p {
+    font-size: 15px;
+  }
+
+  .adidas-ul,
+  .collection-li,
+  .links-li,
+  .banner-text {
+    font-size: 12px;
+  }
+
+  .home-models {
+    margin-left: -10px;
+  }
+
+  .adidas-hats {
+    padding-left: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-main-h5,
+  .adidas-h5,
+  .collection-h5,
+  .links-h6,
+  #navLinks {
+    font-size: 20px;
+  }
+  .home-main-p,
+  .adidas-p,
+  .collection-p,
+  .follow-p,
+  .bottom-li,
+  .bottom-p {
+    font-size: 14px;
+  }
+
+  .logo-img {
+    height: 40px;
+    width: 95px;
+}
+
+#navBar{
+  height: 60px;
+}
+
+
+
+div#carousel {
+  perspective: 125px;
+  height: 235px;
+}
+
+
+div#carousel ~ span {
+  margin-top: -120px;
+}
+
+.adidas {
+  height: 450px;
+}
+.adidas-hat {
+  height: 80px;
+}
+.home-main {
+  height: 200px;
+}
+
+.collection-pic.finger {
+  height: 85px;
+}
+.collection-pic.decks {
+  height: 60px;
+}
+.collection-text-col {
+  height: 400px;
+}
+}
+
+
+@media only screen and (max-width: 500px) {
+  div#carousel {
+      perspective: 70px;
+      height: 227px;
+  }
+  div#carousel ~ span {
+    margin-top: -105px;
+}
+
+  #navLinks{
+    padding-left: 0;
+  }
+
+  .home-gallery-images {
+    height: 75px;
+}
+
+.home-gallery-row {
+  margin-left: 40px;
+}
+
+.banner-text, .bottom-li, .bottom-p {
+  font-size: 10px;
+}
+
+.links-li{
+  float: none;
+}
+
+
+.links-a{
+  text-decoration: none!important;
+}
+
+.collection-pic.finger {
+  height: 70px;
+}
+
+.collection-pic.decks {
+  height: 56px;
+  padding-right: 0;
+}
+
+.collection-pic.mic {
+  height: 90px;
+}
+
+.collection-pic.usb {
+  padding-left: 16px;
+  height: 35px;
+}
+
+.home-main-arrow {
+  height: 70px;
+}
+.adidas-hats {
+  padding: 25px;
+}
+.adidas-hat {
+  height: 65px;
+}
+.adidas {
+  height: 400px;
+}
+}
+
+@media only screen and (max-width: 450px) {
+  div#carousel {
+      perspective: 54px;
+
+  }
+
+  figure#spinner img {
+    width: 36%;
+}
+.logo-img {
+  margin-left: 35px;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+  div#carousel {
+      perspective: 46px;
+height: 215px;
+  }
+
+  figure#spinner img {
+    width: 36%;
+}
+
+
+.banner-text, .adidas-ul {
+  font-size: 8px;
+  padding-top: 3px;
+}
+
+.delivery-img {
+  height: 15px;
+  width: 29px;
+}
+
+.home-gallery-row {
+  margin-left: 25px;
+}
+}
